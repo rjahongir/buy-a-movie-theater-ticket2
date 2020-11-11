@@ -34,11 +34,15 @@ body {
 }
 
 .container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
    width: 100%;
    max-width: 800px;
    margin-top: 20px;
    padding-left: 20px;
    padding-right: 20px;
+   padding-top: 50px;
    margin-left: auto;
    margin-right: auto;
 }
@@ -53,9 +57,7 @@ body {
    list-style-type: none;
 }
 
-.cinema-ticket__lucy,
 .cinema-ticket__justice-ieague,
-.cinema-ticket__avatar2,
 .cinema-ticket__batman{
    position: absolute;
    z-index: -8;
@@ -65,9 +67,7 @@ body {
     /*    transform: scale(0);   */
 }
 
-.cinema-ticket:hover .cinema-ticket__lucy,
 .cinema-ticket:hover .cinema-ticket__justice-ieague, 
-.cinema-ticket:hover .cinema-ticket__avatar2,
 .cinema-ticket:hover .cinema-ticket__batman{
    display: block; 
 /*    transform: scale(1);   */

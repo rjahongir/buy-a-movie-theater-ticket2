@@ -3,6 +3,8 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/styles.css">
    <title>Document</title>
 </head>
 <body>
@@ -11,6 +13,7 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/styles.css">
       <title>Document</title>
@@ -19,48 +22,89 @@
       <section class="movies">
          <h2 class="visually-hidden">Tickets for new movies</h2>
          <div class="container">
-            <ul class="movies__list">
-               <li>
+         <form class="money-shredding to-order col-8 mx-auto row" 
+               action="https://echo.htmlacademy.ru/" 
+               method="GET">
+
+            <div class="form-group row col-12 mb-4">
+              <labele class="d-block w-100" for="user_money">Your money:</labele>
+              <input class="money-inserted form-control col-md-12" 
+                     type="text" 
+                     step="any" 
+                     id="user_money" 
+                     name="user_money"
+                     placeholder="Enter money" 
+                     min="0" 
+                     aria-label="Enter money" 
+                     required>
+            </div>
+
+            
+            <div class="result-form d-none form-group col-12 row">
+              <div class="alert col-12 d-flex">
+                <span class="d-none result-view mr-2">UZS will be $<span class="result-cash">0</span>at the dollar exchange rate !</span>
+
+                <span class="unsatisfactory-result-top d-none">UZS will be $<span class="result-failure">0</span>at the dollar exchange rate !</span>
+
+               <span class="unsatisfactory-result d-none">not enough funds, $<span class="insufficient-price">0</span>was not enough
+               </span>
+              </div>
+            </div>
+            <div class="form-group col-12 row">
+              <button class="form__btn btn btn-danger mb-4 col-12 py-2" type="submit">Convert</button>
+            </div>
+         </form>
+                     
+         <ul class="movies__list">
+            <li>
+               <ul class="cinema-ticket">
+                  <img class="cinema-ticket__justice-ieague" src="img/supermen.jpg" alt="a   picture of the justice ieague film">
+                  <li class="movies__item movies-card">
+                     <a class="movies-card__link" href="#">
+                        <img class="movies-card__img" src="img/justice-league.jpg"
+                        width="220" height="340" alt="Justice Ieague">
+                     </a>
+                        <div class="movies-card__info">
+                           <h3 class="movies-card__name">justice ieague</h3>
+                           <p class="movies-card__tagline">You can't save the world alone</p>
+                           <div class="movies-card__priecs">
+                              <ins class="movies-card__price old">$20.1</ins>
+                              <del class="movies-card__priec">$28.1</del>
+                           </div>
+                           <a class="movies-card__buy-button" href="#">buy now</a>
+                        </div>
+                     </li>
+                  </ul>
+               </li>
+              <!--  <li>
                   <ul class="cinema-ticket">
-                     <img class="cinema-ticket__justice-ieague" src="img/supermen.jpg" alt="a picture of the justice ieague film">
+                     <img class="cinema-ticket__batman" src="img/betmen-1.jpg" alt="
+                     a picture of a batman movie">
                      <li class="movies__item movies-card">
-                        <a class="movies-card__link" href="#"><img class="movies-card__img" src="img/justice-league.jpg"
-                           width="220" height="340" alt="Justice Ieague"></a>
+                        <a class="movies-card__link" href="#"><img class="movies-card__img" src="img/betmen.new.jpg">
+                           width="220" height="340" alt="vengeance batman"></a>
                            <div class="movies-card__info">
-                              <h3 class="movies-card__name">justice ieague</h3>
-                              <p class="movies-card__tagline">You can't save the world alone</p>
+                              <h3 class="movies-card__name">vengeance batman</h3>
+                              <p class="movies-card__tagline">you can't save the world alone</p>
                               <div class="movies-card__priecs">
                                  <ins class="movies-card__price old">$20.1</ins>
                                  <del class="movies-card__priec">$28.1</del>
                               </div>
-                              <a class="movies-card__buy-button" href="#">buy now</a>
+                              <a href="#" class="movies-card__buy-button">buy now</a>
                            </div>
                         </li>
                      </ul>
-                  </li>
-                  <li>
-                     <ul class="cinema-ticket">
-                        <img class="cinema-ticket__batman" src="img/betmen-1.jpg" alt="
-                        a picture of a batman movie">
-                        <li class="movies__item movies-card">
-                           <a class="movies-card__link" href="#"><img class="movies-card__img" src="img/betmen.new.jpg"
-                              width="220" height="340" alt="vengeance batman"></a>
-                              <div class="movies-card__info">
-                                 <h3 class="movies-card__name">vengeance batman</h3>
-                                 <p class="movies-card__tagline">you can't save the world alone</p>
-                                 <div class="movies-card__priecs">
-                                    <ins class="movies-card__price old">$20.1</ins>
-                                    <del class="movies-card__priec">$28.1</del>
-                                 </div>
-                                 <a href="#" class="movies-card__buy-button">buy now</a>
-                              </div>
-                           </li>
-                        </ul>
-                     </li>
-                        </ul>
+                  </li> -->
+               
+               </ul>
+
+                            
                      </div>
                   </section>
-                  <script> </script>
+                  <script src="js/jquery-3.5.1.min.js"></script>
+                  <script src="js/bootstrap.bundle.min.js"></script>
+                  <script src="js/scripts.js"></script>
+          
                </body>
                </html>
             </body>
