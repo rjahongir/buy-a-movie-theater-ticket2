@@ -1,5 +1,5 @@
 var USD_IN_UZS = 10374;
-var betmenMovieTicketingPrice = 21;
+var betmenMovieTicketingPrice = 20.1;
 var elShreddingForm = document.querySelector('.money-shredding');
 var elInsertedInput = elShreddingForm.querySelector('.money-inserted');
 var elAnsverResult = elShreddingForm.querySelector('.result-cash');
