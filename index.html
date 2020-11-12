@@ -24,6 +24,7 @@
          <div class="container">
          <form class="money-shredding to-order col-8 mx-auto row" 
                action="https://echo.htmlacademy.ru/" 
+               autocomplete="off"
                method="GET">
 
             <div class="form-group row col-12 mb-4">
@@ -40,15 +41,13 @@
             </div>
 
             
-            <div class="result-form d-none form-group col-12 row">
-              <div class="alert col-12 d-flex">
+            <div class="result-form alert d-none form-group col-12 row">
                 <span class="d-none result-view mr-2">UZS will be $<span class="result-cash">0</span> at the dollar exchange rate !</span>
 
                 <span class="unsatisfactory-result-top d-none">UZS will be $<span class="result-failure">0</span> at the dollar exchange rate !</span>
 
                <span class="unsatisfactory-result d-none">not enough funds, $<span class="insufficient-price">0</span> was not enough
                </span>
-              </div>
             </div>
             <div class="form-group col-12 row">
               <button class="form__btn btn btn-danger mb-4 col-12 py-2" type="submit">Convert</button>

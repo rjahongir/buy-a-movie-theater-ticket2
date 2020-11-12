@@ -23,6 +23,10 @@ elShreddingForm.addEventListener('submit', function(evt){
            elResultForm.classList.add('alert-success');
            elAnsverResult.textContent = currencyExchange;
            
+           elUnsatisfactoryResult.classList.add('d-none');
+           elUnsatisfactoryResultTop.classList.add('d-none');
+           elResultForm.classList.remove('alert-danger');
+
          } else {
            var notEnoughMoney = betmenMovieTicketingPrice - currencyExchange;
            elUnsatisfactoryResult.classList.remove('d-none');
@@ -30,6 +34,8 @@ elShreddingForm.addEventListener('submit', function(evt){
            elResultForm.classList.add('alert-danger');
            elResultFailure.textContent = currencyExchange;
            elInsufficientPrice.textContent = notEnoughMoney ;
+           
+           elResultView.classList.add('d-none');
          }
 });
   
